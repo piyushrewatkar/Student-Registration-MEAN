@@ -17,7 +17,7 @@ app.use( (req, res, next) => {
 });
 
 
-const url = "mongodb+srv://piyush_rewatkar:Password@22@testcluster1.jtyhb.mongodb.net/students?retryWrites=true&w=majority";
+const url = "mongodb+srv://piyush_rewatkar:[Enter Password for MongoDB]@testcluster1.jtyhb.mongodb.net/students?retryWrites=true&w=majority";
 mongoose.connect(url,  { useNewUrlParser: true }).then(()=>{
     console.log("connected to db.");
 })
