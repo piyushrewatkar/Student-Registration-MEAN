@@ -1,0 +1,19 @@
+<div class="col-md-12">
+    <h2 style="color: seagreen"><br> Student Details<br></h2>
+    <table class="table table-striped">
+        
+            <tr>
+                <th >ID</th>
+                <th>Name</th>
+                <th>Branch</th>
+            </tr>
+             
+            <tr *ngFor="let user of users">
+                <td>{{user.id}}</td>
+                <td>{{user.name}}</td>
+                <td>{{user.branch}}</td>
+                <td><button class="btn btn-danger" (click)="deleteUser(user)"> Delete </button></td>
+            </tr>
+           
+    </table>
+</div>
